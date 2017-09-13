@@ -1,0 +1,40 @@
+Exercise 2 - Complexity of code blocks
+
+1)
+func(n):
+    for i in range(0,n):
+        print 'Problem 1'
+
+2)
+func(n):
+    for i in range(0,n):
+        for j in range(0,i):
+            print 'Problem 2'
+
+
+3)
+func(start,end,list,searchItem):
+    mid = (start+end)/2
+    if list[mid]==searchItem:
+        return currIndex
+    if start==end:
+        return -1
+    if searchItem < list[mid]:
+        func(start,mid,list,searchItem)
+    else:
+        func(mid,end,list,searchItem)
+
+
+4)
+func(n=12):
+    for i in range(0,n):
+        print 'Problem 4'
+
+
+5)
+fact(n):
+    /*Returns Factorial of a number*/
+
+func(n):
+    for i in range(0,fact(n)):
+        print 'Problem 5'
